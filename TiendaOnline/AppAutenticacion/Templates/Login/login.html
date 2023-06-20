@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="" style="color: white;">
+
+    {% csrf_token %}
+<div class="container" style="text-align: center;">
+    <div class="alert alert-primary" role="alert">
+
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-success">Login</button>
+
+    {% if messages %}
+
+    {% for mensaje in messages %}
+
+    <span class="alert alert-{{mensaje.tags}}">{{mensaje}}</span>
+        
+    {% endfor %}
+
+    {% endif %}
+    
+    </div>
+</div>
+
+
+</form>
+
+{% endblock %}

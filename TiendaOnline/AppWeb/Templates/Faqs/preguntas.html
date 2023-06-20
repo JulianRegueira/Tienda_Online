@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-bottom: 10px;">
+    <div class="card">
+        <div class="card-header">
+        Como hago un pedido?
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">ES MUY SIMPLE</h5>
+        <p class="card-text">Te registras, vas a la tienda, agregas al carro y compras!</p>
+        <a href="{% url 'Tienda' %}" class="btn btn-primary">Ir a la tienda</a>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+        Como pago?
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">COMO VOS QUIERAS</h5>
+        <p class="card-text">Podes elegir pagar por transferencia bancaria o tarjetas de debito/credito! <br>
+        Si te quedaste con mas dudas, CONTACTANOS!</p>
+        <a href="{% url 'Contacto' %}" class="btn btn-primary">Ir a la contaco</a>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header">
+        Tengo garantia?
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">OBVIO</h5>
+        <p class="card-text">Contamos con 3 meses de garantia para tus productos</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
