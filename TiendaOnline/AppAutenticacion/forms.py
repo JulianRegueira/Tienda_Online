@@ -11,7 +11,7 @@ class SignUpForm(UserCreationForm):
             "username",
             "password1",
             "password2",
-            "email"
+            "email",
         ]
 
 class UserEditForm(UserCreationForm):

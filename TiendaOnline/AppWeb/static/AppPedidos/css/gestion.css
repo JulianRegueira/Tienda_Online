@@ -1,9 +1,10 @@
 body {
   font-family: 'Lora';
-  background-image: linear-gradient(rgba(204, 59, 10, 0.432), rgba(13, 122, 99, 0.363)), url("../img/fondo.jpg"); /* FONDO PAGINA */
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.363)), url("../img/fondo.jpg");  FONDO PAGINA */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  background-color: black;
 }
 
 h1,
@@ -24,10 +25,7 @@ p {
 }
 
 .site-heading {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   text-transform: uppercase;
-  line-height: 1;
   font-family: 'Raleway';
 }
 
@@ -80,7 +78,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgb(6, 80, 165); /* FONDO BARRA PRINCIPAL */
+  background-color: rgb(166, 231, 12); /* FONDO BARRA PRINCIPAL */
   font-family: 'Raleway';
 }
 
@@ -89,7 +87,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(231, 11, 11, 0.7);
   font-weight: 800;
 }
 
@@ -103,7 +101,7 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(214, 10, 10, 0.4);
     text-decoration: underline;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
@@ -134,7 +132,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgb(6, 80, 165); /* FONDO LO MEJOR DEL GAMING */
+    background-color: rgb(42, 3, 114); /* FONDO LO MEJOR DEL GAMING */
     color: cornsilk;
     position: absolute;
   }
@@ -155,15 +153,8 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgb(0, 0, 0); /* FONDO COMPROMISO TOTAL */
-}
-
-.cta .cta-inner {
-  position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
-  background-color: rgb(6, 80, 165); /* FONDO RECUADRO COMPROMISO TOTAL */
-  color: cornsilk;
+  background-color: rgb(42, 3, 114); /* FONDO COMPROMISO TOTAL */
+  color: white;
 }
 
 .cta .cta-inner:before {
@@ -174,7 +165,6 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
 
 .cta .cta-innerv {
@@ -229,7 +219,7 @@ p {
 }
 
 .footer {
-   background-color: rgb(6, 80, 165); /* FONDO COMPROMISO TOTAL */
+   background-color: rgb(42, 3, 114); /* FONDO FOOTER */
    opacity: 0.95;
 }
 

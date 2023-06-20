@@ -3,6 +3,14 @@
 {% load static %}
 
 {% block content %}
+<style>
+  .section-background {
+      background-image: url("{% static 'AppPedidos/img/fondo_garantia.jpg' %}");
+      background-size: cover;
+      background-position: center;
+  }
+</style>
+
    <!-- Heading -->
    <section class="page-section clearfix">
     <div class="container">
@@ -24,7 +32,7 @@
 
   
     <!-- Message -->
-    <section class="page-section cta">
+    <section class="page-section cta section-background">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">

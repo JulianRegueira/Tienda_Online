@@ -15,22 +15,29 @@
 
     <!-- Styles -->
     <link href="{% static 'AppPedidos/css/gestion.css'%}" rel="stylesheet">
+    <style>
+      .heading-background {
+          background-image: url("{% static 'AppPedidos/img/fondo_cabecera.jpg' %}");
+          background-size: cover;
+          background-position: center;
+      }
+      </style>
+    
 </head>
 
 <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      
-        <span class="site-heading-lower">GAMING ARG</span>
-    </h1>
+  <h1 class="site-heading text-center text-white d-lg-block heading-background">
+    <span class="site-heading-lower" style="font-weight: bold;">GAMING ARG</span>
+  </h1>
 
  <!-- <NavBar> -->
-<header class="bg-dark bg-gradient py-2 my-2">
+<header class="bg-dark bg-gradient py-3 my-2">
   <div class="container d-flex justify-content-around align-items-center">
 
       <form class="input-group mb-0" action="/buscar/" method="GET">
         <input type="text" class="form-control" placeholder="Buscar Prodcutos" name="buscar"><!--LO QUE SE ENCUENTRA DENTRO DE NAME ES COMO EL ID PARA LLAMARLO EN OTRAS PLANTILLAS O FUNCIONES-->
-        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+        <button class="btn btn-success" type="submit">Buscar</button>
       </form>
 
       <nav class="w-100">
@@ -44,7 +51,7 @@
       <div>
         {% if user.is_authenticated %}
     
-          Hola {{ user.username }} &nbsp;&nbsp;<a href="{% url 'Cerrar_sesion' %}" style="color: white;">Cerrar sesion</a>
+        Hola {{ user.username }}&nbsp;&nbsp;<a href="{% url 'Cerrar_sesion' %}" style="color: rgb(0, 0, 0);" class="btn btn-light">Cerrar sesion</a>
     
           {% else %}
     
@@ -86,7 +93,7 @@
         	<a href="{% url 'Aviso_legal' %}" class="link">Aviso legal</a> ·
         	<a href="{% url 'Cookies' %}" class="link">Cookies</a>
 		</p>
-        <p class="m-0 mbt1">&copy; JulianRegueira2023</p>
+        <p class="m-0 mbt1" style="color: white;">&copy; JulianRegueira2023</p>
       </div>
 	</footer>
 
