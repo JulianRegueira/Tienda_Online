@@ -3,11 +3,8 @@
 Instalar las dependencias necesarias para la correcta ejecucion del proyecto:<p>
 pip install -r requirements.txt<p>
 
-En el archivo settings.py modificar las siguientes lineas:<p>
+En el archivo settings.py modificar las siguientes lineas para el correcto funcionamiento de envío de mail:<p>
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"<p>
-EMAIL_HOST = "smtp.gmail.com"<p>
-EMAIL_PORT = 587<p>
 EMAIL_HOST_USER = "EMAIL_HOST_USER" > por tu mail personal<p>
 EMAIL_HOST_PASSWORD = "EMAIL_HOST_PASSWORD" > por la contraseña generada en el link de abajo<p>
 EMAIL_USE_TLS = True<p>
