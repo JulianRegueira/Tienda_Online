@@ -4,8 +4,10 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: black
 }
+
+
 
 h1,
 h2,
@@ -275,4 +277,15 @@ ul.errorlist{
   margin: 5px auto;
   border-radius: 8px;
   padding: 2px;
+}
+
+header{
+  background-color: rgb(42, 42, 44);
+}
+
+#barra a{
+  color: white;
+  font-family: dubai;
+  font-size: large;
+  font-weight: bold;
 }

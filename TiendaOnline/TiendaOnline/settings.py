@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     "AppCarrito",
     "AppAutenticacion",
     "AppPedidos",
+    "crispy_forms",
+    "crispy_bootstrap4",
+    "bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -141,8 +144,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 
@@ -153,3 +156,5 @@ MESSAGE_TAGS={
     mensajes_de_error.WARNING: 'warning',
     mensajes_de_error.ERROR: 'danger',
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -8,6 +8,7 @@ from django.contrib import messages
 from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
 from .forms import SignUpForm
+from AppPedidos.models import Pedido
 
 # Create your views here.
         
@@ -43,3 +44,13 @@ class SignupView(CreateView):
     form_class = SignUpForm
     success_url = reverse_lazy("Index")
     template_name = "Registro/registro.html"
+
+def mostrar_pedidos(request):
+    # Obtener el usuario actual
+    user = request.user
+
+    # Obtener todos los detalles de los pedidos del usuario
+    pedidos = Pedido.objects.filter(user=user)
+
+    # Pasar los detalles de los pedidos al template HTML
+    return render(request, 'Perfil/mostrar_pedidos.html', {'pedidos': pedidos})

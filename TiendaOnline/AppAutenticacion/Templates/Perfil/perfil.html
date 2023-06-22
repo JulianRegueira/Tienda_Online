@@ -5,20 +5,17 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
-<form method="post" action="" style="color: white;">
-
-    {% csrf_token %}
     <form method="post" action="" style="color: white;">
 
         {% csrf_token %}
         
             <div style="width: 30%; margin: auto;">
-                {{form|crispy}}
+                <h1>Editar Perfil</h1>
+                <h1>De {{usuario}}</h1>
+                    {{miFormulario|crispy}}
         
                 <button type="submit" class="btn btn-success">Enviar</button>
             </div>       
         
         </form>
-
 {% endblock %}

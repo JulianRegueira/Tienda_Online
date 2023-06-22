@@ -71,4 +71,3 @@ def calcular_monto_pedido(request, external_reference):
     monto_total = pedido.calcular_monto_total()
 
     return monto_total
-

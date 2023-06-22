@@ -13,6 +13,7 @@ class SignUpForm(UserCreationForm):
             "password2",
             "email",
         ]
+        help_texts =  {k: "" for k in fields}
 
 class UserEditForm(UserCreationForm):
 
