@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from django.contrib.messages import constants as mensajes_de_error
 from pathlib import Path
-from .env_vars import EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
